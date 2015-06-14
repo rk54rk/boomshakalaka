@@ -18,11 +18,15 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
-        <div class="recent-project container">
+        <div class="recent-project container-fluid">
             <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <h2><?php the_title(); ?></h2>
-                <div><?php the_content(); ?></div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                    <div><?php the_content(); ?></div>
+                  </div>
+                </div>
               </div>
           </div>
       </div>
@@ -40,8 +44,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
           
-          
-        <div id="about" class="container">
+<div class="container-fluid about">
+  <div class="row">
+        <div class="container">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
           <?php 
@@ -65,6 +70,8 @@ get_header(); ?>
             </div>
             </div>
         </div>
-	</div><!-- #primary -->
+    </div>
+  </div>
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
