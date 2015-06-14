@@ -16,8 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link href='http://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Chivo:400,900' rel='stylesheet' type='text/css'>
   
 <?php wp_head(); ?>
 </head>
@@ -28,8 +27,14 @@
 
 	<nav id="navbar" class="navbar navbar-default navbar-fixed-top site-header" role="banner">
 		<div class="container">
-          <span id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></span>
-          <span style="float:right"><a href="/#who">Who?</a></span><span style="float:right"><a href="/#what">What?</a></span>
+          <span id="logo"><a href="<?php echo esc_url( home_url( '/#' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></span>
+          <span class="top-menu"><a href="/projects">All projects</a></span>
+          <span class="top-menu"><a href="/#why">Why?</a></span>
+          <span class="top-menu"><a href="/#where">Where?</a></span>
+          <span class="top-menu"><a href="/#when">When?</a></span>
+          <span class="top-menu"><a href="/#what">What?</a></span>
+          <span class="top-menu"><a href="/#who">Who?</a></span>
+          
 		</div>
 
 	</nav><!-- #navbar -->

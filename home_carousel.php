@@ -13,20 +13,46 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+        <?php //echo do_shortcode( '[rpf]' ); ?>
+
 
 <?php if ( have_posts() ) : ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-        <div class="recent-project container">
+          
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+      <?php while ( have_posts() ) : the_post(); 
+      if( $wp_query->current_post == 0 && !is_paged() ){ ?>
+        <div class="item active">
+      <?php } else { ?>
+        <div class="item">
+      <?php } ?>
+          <div class="inner-item container">
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
-                <h2><?php the_title(); ?></h2>
-                <div><?php the_content(); ?></div>
+                <h2 style="text-align:center;"><?php the_title(); ?></h2>
+                <?php the_content(); ?>
               </div>
+            </div>
           </div>
       </div>
       <?php endwhile; ?>
+      </div>
+
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control-bs" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control-bs" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
   
@@ -39,6 +65,9 @@ get_header(); ?>
 <?php endif; ?>
 
 		</main><!-- #main -->
+
+<div class="row" style="height:30px;margin-top:20px;background-image:linear-gradient(#DDD, #FFF);">
+</div>
           
           
         <div id="about" class="container">
