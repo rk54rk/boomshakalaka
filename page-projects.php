@@ -19,7 +19,7 @@ get_header(); ?>
   <?php 
 
 query_posts( array(
-    'posts_per_page' => 3,
+    'posts_per_page' => 10,
 	'author' => 1,
     'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1 ),
  ));
