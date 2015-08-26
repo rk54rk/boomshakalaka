@@ -23,20 +23,30 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'boom-shakalaka' ); ?></a>
-
-	<nav id="navbar" class="navbar navbar-default navbar-fixed-top site-header" role="banner">
+	<nav id="navbar" class="navbar navbar-default site-header" role="banner">
+      
 		<div class="container">
-          <span id="logo"><a href="<?php echo esc_url( home_url( '/#' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></span>
-          <span class="top-menu"><a href="/projects">All projects</a></span>
-          <span class="top-menu"><a href="/#why">Why?</a></span>
-          <span class="top-menu"><a href="/#where">Where?</a></span>
-          <span class="top-menu"><a href="/#when">When?</a></span>
-          <span class="top-menu"><a href="/#what">What?</a></span>
-          <span class="top-menu"><a href="/#who">Who?</a></span>
-          
+          <div class="row">
+            <span id="logo"><a href="<?php echo esc_url( home_url( '/#' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></span>
+            <!--div id="rainbow-logo" style="font-size:90px;line-height:90px"><span>BOOM SHAKALAKA PRODUCTIONS</span></div-->
+          </div>
 		</div>
+<!--script>
+    var colours = ["#000000", "#FF0000", "#990066", "#FF9966", "#996666", "#0022FF", "#CC9933"], 
+    idx;
 
+jQuery(function() {
+    var div = jQuery('#rainbow-logo'); 
+    var chars = div.text().split('');
+    div.html('');     
+    for(var i=0; i<chars.length; i++) {
+        idx = Math.floor(Math.random() * colours.length);
+        var span = jQuery('<span>' + chars[i] + '</span>').css("color", colours[idx]);
+        div.append(span);
+    }
+});
+</script-->
+      
 	</nav><!-- #navbar -->
 
 	<div id="content" class="site-content">
