@@ -32,7 +32,7 @@ get_header(); ?>
               <div class="container">
                 <div class="row">
                   <div class="col-sm-6 col-sm-offset-3 article">
-                    <h2><?php the_title(); ?></h2>
+                    <h3><?php the_title(); ?></h3>
                     <div><?php the_content(); ?></div>
                   </div>
                 </div>

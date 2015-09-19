@@ -1,4 +1,5 @@
 html, body{font-family: CoreSansD35Regular, sans-serif;font-size:16px;overflow-x: hidden;}
+.bold{font-family: CoreSansD55Bold}
 .home-subtitle{margin-top:50px;text-transform: uppercase;font-size:24px}
 
 a, a:active, a:focus{color:black;text-decoration: none;}
@@ -21,9 +22,9 @@ h2{font-size:32px}
 .recent-project h3{text-align:left;text-transform:uppercase;margin-top:0}
 
 body{background-image:url(/wp-content/themes/boom-shakalaka/assets/bg.jpg);background-size:120vw; background-position:top center;}
-.article{background-color:rgba(255,255,255,0.8);}
-.about .col-sm-6{background-color:rgba(255,255,255,0.8);}
-
+.article{background-color:rgba(255,255,255,0.9);}
+.article h3{margin-top:15px;padding-top:10px;border-top:1px solid black;}
+.about .col-sm-6{background-color:rgba(255,255,255,0.9);}
 img{max-width:100%;height:auto}
 
 
