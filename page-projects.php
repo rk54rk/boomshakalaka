@@ -19,7 +19,7 @@ get_header(); ?>
           <div class="row">
             <div class="col-sm-6">
               <ul class="top-menu">
-                <li class="top-menu-li"><a href="#">All Projects</a></li> 
+                <li class="top-menu-li"><a href="<?php echo esc_url( home_url( '/#' ) ); ?>">Home</a></li> 
               </ul>
             </div>
           </div>
@@ -33,7 +33,8 @@ query_posts( array(
  ));
 
 if (have_posts()) :?><?php while(have_posts()) : the_post(); ?> 
-        <div class="recent-project container-fluid">
+        
+        <div class="recent-project container-fluid" style='margin-top:34px'>
             <div class="row">
               <div class="container">
                 <div class="row">

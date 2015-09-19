@@ -15,6 +15,15 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 <main id="main" class="site-main" role="main">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <ul class="top-menu">
+                <li class="top-menu-li"><a href="javascript:history.go(-1)">Back</a></li> 
+              </ul>
+            </div>
+          </div>
+      </div>
 
 <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
@@ -22,7 +31,7 @@ get_header(); ?>
             <div class="row">
               <div class="container">
                 <div class="row">
-                  <div class="col-sm-8 col-sm-offset-2">
+                  <div class="col-sm-6 col-sm-offset-3 article">
                     <h2><?php the_title(); ?></h2>
                     <div><?php the_content(); ?></div>
                   </div>

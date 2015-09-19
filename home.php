@@ -20,7 +20,7 @@ get_header(); ?>
             <div class="col-sm-6">
               <ul class="top-menu">
                 <li class="top-menu-li"><a href="/#about">About</a></li>
-                <li class="top-menu-li"><a href="/projects">Projects</a></li> 
+                <li class="top-menu-li"><a href="/projects">All projects</a></li> 
               </ul>
             </div>
           </div>

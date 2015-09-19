@@ -13,7 +13,8 @@
     
 	<footer id="colophon" class="site-footer container" role="contentinfo">
 		<div class="site-info" style="text-align:center;margin-top:50px">
-          Boom Shakalaka by <a href="http://www.gemmacairney.co.uk" target="_blank">Gemma Cairney</a>.
+          Boom Shakalaka
+          <!-- by <a href="http://www.gemmacairney.co.uk" target="_blank">Gemma Cairney</a>-->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
