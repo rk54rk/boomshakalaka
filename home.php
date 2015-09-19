@@ -60,7 +60,7 @@ if ( have_posts() ) : ?>
 
 		</main><!-- #main -->
           
-<div class="container-fluid about">
+<div class="container-fluid about" style="min-height:85vh">
   <div class="row">
         <div class="container">
           <div class="row">
