@@ -24,7 +24,7 @@ h2{font-size:32px}
 body{background-image:url(/wp-content/themes/boom-shakalaka/assets/bg.jpg);background-size:120vw; background-position:top center;}
 .article{background-color:rgba(255,255,255,0.9);}
 .article h3{margin-top:15px;padding-top:10px;border-top:1px solid black;}
-.about .col-sm-6{background-color:rgba(255,255,255,0.9);}
+.about .about-body{background-color:rgba(255,255,255,0.9);}
 img{max-width:100%;height:auto}
 
 
@@ -49,4 +49,5 @@ img{max-width:100%;height:auto}
 @media (max-width: 767px) {
   #logo a{width:191px;height:120px;margin-right:15px;}
   body{background-size:180vw;}
+  #gemma-portrait{margin-top:150px;z-index:-1}
 }

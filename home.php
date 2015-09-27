@@ -28,7 +28,7 @@ get_header(); ?>
 <?php
 
 query_posts( array(
-    'posts_per_page' => 3,
+    'posts_per_page' => 5,
  ));
 if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
@@ -60,11 +60,11 @@ if ( have_posts() ) : ?>
 
 		</main><!-- #main -->
           
-<div class="container-fluid about" style="min-height:85vh">
+<div id='about-con' class="container-fluid about" style="min-height:85vh">
   <div class="row">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 about-body">
           <?php 
 
           // The Query
@@ -85,9 +85,36 @@ if ( have_posts() ) : ?>
           ?>
             </div>
             </div>
+              
+            </div>
         </div>
     </div>
   </div>
 </div><!-- #primary -->
+
+<img id='gemma-portrait' src='/wp-content/themes/boom-shakalaka/assets/gemma-portrait.png' style='display:none;position:absolute;right:0;width:50vw;max-width:441px'></img>
+
+<script>
+
+var body = document.body;
+var html = document.documentElement;
+
+setTimeout(function() {refresh();},2000);
+  
+function refresh(){
+document.getElementById("gemma-portrait").style.display='none';
+var docHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+document.getElementById("gemma-portrait").style.display='block';
+var div1Height = document.getElementById("gemma-portrait").offsetHeight;
+var setTop = docHeight - div1Height;
+document.getElementById("gemma-portrait").style.top=setTop + 'px';
+}
+  
+window.onresize = function(){
+  refresh();
+}
+
+
+</script>
 
 <?php get_footer(); ?>
