@@ -20,6 +20,7 @@ get_header(); ?>
             <div class="col-sm-6">
               <ul class="top-menu">
                 <li class="top-menu-li"><a href="/#about">About</a></li>
+                <li class="top-menu-li"><a href="/#contact">Contact</a></li>
                 <li class="top-menu-li"><a href="/projects">All projects</a></li> 
               </ul>
             </div>
@@ -60,7 +61,7 @@ if ( have_posts() ) : ?>
 
 		</main><!-- #main -->
           
-<div id='about-con' class="container-fluid about" style="min-height:85vh">
+<div id='about-con' class="container-fluid about">
   <div class="row">
         <div class="container">
           <div class="row">
@@ -92,29 +93,18 @@ if ( have_posts() ) : ?>
   </div>
 </div><!-- #primary -->
 
-<img id='gemma-portrait' src='/wp-content/themes/boom-shakalaka/assets/gemma-portrait.png' style='display:none;position:absolute;right:0;width:50vw;max-width:441px'></img>
+<div class="container" style="text-align:center">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img id='gemma-portrait' style="margin:50 auto" src='/wp-content/themes/boom-shakalaka/assets/three_small.png'></img>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
 
-<script>
-
-var body = document.body;
-var html = document.documentElement;
-
-setTimeout(function() {refresh();},2000);
-  
-function refresh(){
-document.getElementById("gemma-portrait").style.display='none';
-var docHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-document.getElementById("gemma-portrait").style.display='block';
-var div1Height = document.getElementById("gemma-portrait").offsetHeight;
-var setTop = docHeight - div1Height;
-document.getElementById("gemma-portrait").style.top=setTop + 'px';
-}
-  
-window.onresize = function(){
-  refresh();
-}
-
-
-</script>
 
 <?php get_footer(); ?>

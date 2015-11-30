@@ -16,7 +16,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/lib/bootstrap.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scrollIt.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bs.js"></script>
 <script>

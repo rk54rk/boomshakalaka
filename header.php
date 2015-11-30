@@ -15,8 +15,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lib/bootstrap.min.css">
   
 <!--
 /**
@@ -46,6 +45,7 @@
 
 -->
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/boom-shakalaka/assets/fonts/MyFontsWebfontsKit.css"/>
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/boom-shakalaka/assets/fonts/fontello.css"/>
 <style type="text/css">
 .CoreSansD35Regular { font-family: CoreSansD35Regular; }
 .CoreSansD55Bold { font-family: CoreSansD55Bold; }
@@ -61,26 +61,10 @@
 	<nav id="navbar" class="navbar navbar-default site-header" role="banner">
       
 		<div class="container">
-          <div class="row">
+          <div class="row" style="text-align:center;">
             <span id="logo"><a href="<?php echo esc_url( home_url( '/#' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></span>
-            <!--div id="rainbow-logo" style="font-size:90px;line-height:90px"><span>BOOM SHAKALAKA PRODUCTIONS</span></div-->
           </div>
 		</div>
-<!--script>
-    var colours = ["#000000", "#FF0000", "#990066", "#FF9966", "#996666", "#0022FF", "#CC9933"], 
-    idx;
-
-jQuery(function() {
-    var div = jQuery('#rainbow-logo'); 
-    var chars = div.text().split('');
-    div.html('');     
-    for(var i=0; i<chars.length; i++) {
-        idx = Math.floor(Math.random() * colours.length);
-        var span = jQuery('<span>' + chars[i] + '</span>').css("color", colours[idx]);
-        div.append(span);
-    }
-});
-</script-->
       
 	</nav><!-- #navbar -->
 
